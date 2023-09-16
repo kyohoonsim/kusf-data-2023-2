@@ -9,5 +9,5 @@
 
 ## 운영체제 현황
 
-- Windows: 15
-- MacOS: 4
+- Windows: 15명
+- MacOS: 4명
