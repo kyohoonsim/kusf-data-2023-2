@@ -16,3 +16,8 @@
 
 <img width="892" alt="image" src="https://github.com/kyohoonsim/kusf-data-2023-2/assets/58966525/500cfe4f-ae09-4253-9bb6-5eae89dedf2a">
 
+- 1조 / 안치성 / 스분감 
+- 2조 / 유혜연 / 비빔밥
+- 3조 / 박종현 / 청담동키즈
+- 4조 / 이지은 / 손오공
+- 5조 / 김기훈 / 5진다
