@@ -6,3 +6,8 @@
 
 - CGV 청담 시네시티
 - 와이파이: KUSF / kusf12345
+
+## 운영체제 현황
+
+- Windows: 15
+- MacOS: 4
