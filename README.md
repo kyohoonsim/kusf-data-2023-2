@@ -11,3 +11,8 @@
 
 - Windows: 15명
 - MacOS: 4명
+
+## 조
+
+<img width="892" alt="image" src="https://github.com/kyohoonsim/kusf-data-2023-2/assets/58966525/500cfe4f-ae09-4253-9bb6-5eae89dedf2a">
+
