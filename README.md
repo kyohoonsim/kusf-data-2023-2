@@ -21,3 +21,7 @@
 |3조|청담동키즈|박종현|박현옥, 김성연, 장훈|
 |4조|손오공|이지은|안소현, 박건영, 강두웅|
 |5조|5진다|김기훈|이선규, 최현아|
+
+## 추천 사이트
+
+- SQL 쿼리 연습: [프로그래머스](https://school.programmers.co.kr/learn/challenges?order=acceptance_desc&page=1&languages=mysql)
