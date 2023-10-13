@@ -7,10 +7,14 @@
 - CGV 청담 시네시티
 - 와이파이: KUSF / kusf12345
 
+---
+
 ## 운영체제 현황
 
 - Windows: 15명
 - MacOS: 4명
+
+---
 
 ## 조
 
@@ -22,6 +26,14 @@
 |4조|손오공|이지은|안소현, 박건영, 강두웅|
 |5조|5진다|김기훈|이선규, 최현아|
 
-## 추천 사이트
+---
+
+## 파이썬 기초 강의자료 링크
+
+- <https://github.com/kyohoonsim/must-know-python>
+
+---
+
+## 추천 링크
 
 - SQL 쿼리 연습: [프로그래머스](https://school.programmers.co.kr/learn/challenges?order=acceptance_desc&page=1&languages=mysql)
