@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles 팀.css">
+  <title>우리들의 공간</title>
+  
+  <style>
+    body {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0
+    }
+    
+    #header {
+      position: fixed;
+      top: 20px; /* 페이지 상단과의 간격 조정 */
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0;
+    }
+    h2 {
+      font-size: 15px;
+      margin: 0;}
+
+    #question-list {
+      margin-top: 1000px; /* 페이지 제목 아래로 내리기 */
+      padding: 20px;
+      overflow-y: scroll; /* 세로 스크롤 적용 */
+      max-height: 1000px; 
+    } 
+
+    .question {
+        font-weight: bold;
+        font-size: 15px;
+         margin-bottom: 0px;
+        padding: 20px;
+        border-radius: 5px
+        }
+
+    .answer-form {
+        background-color: oldlace;
+        font-style:initial;
+        padding: 20px;
+        border-radius: 5px;
+        }
+
+    .answer-form textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        resize: vertical;
+        }
+
+    .submit-btn {
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: rgb(192, 117, 117);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+    .like-btn {
+        cursor: pointer;
+        }
+
+    .like-count {
+        display: inline-block;
+        margin-left: 5px;
+        color: indianred;
+        }
+
+    .toggle-comments {
+        font-size: 10px;
+        cursor: pointer;
+        color: blue;
+        }
+    .reply {
+      display: none;
+      margin-left: 20px;
+    }
+    .toggle-reply {
+      cursor: pointer;
+      color: blue;
+      font-size: 10px;
+    }
+    .reply.show {
+      display: block;
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>소통의 공간</h1>
+        <h2>구단과 팬들이 하나가 되는 곳</h2>
+    </div>
+      
+    <div class="question" id="question1">
+        <h3>QUESTION</h3>
+        <div id="questionDisplay"></div>
+        
+        <div class ="comment1">
+            <p>*내년에는 우승할 수 있을까?</p><div class="like-btn" onclick="increaseLikes('question1')"></div>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <i class="glyphicon glyphicon-thumbs-up" style="text-align:center;"></i>
+            <alt="좋아요" width="20" height="20">
+            <span class="like-count">511</span>
+        </div>
+            <span class="toggle-reply">펼치기</span>
+            <div class="reply">
+              <p>일단 긍정적으로 생각하자..</p>
+              <p>김하성 데려오면 가능ㅇㅇ</p>
+ <input type="text" class="add-answer" placeholder="답변 추가...">
+    <button class="add-answer-btn",style="text-align:center;">답변 추가</button>
+    </div>
+    <br>
+    <div class="comment",style="text-align:center;">
+        <p>*잠실종합운동장 주변 맛집 추천해주세요</p><div class="like-btn" onclick="increaseLikes('question1')"></div>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <i class="glyphicon glyphicon-thumbs-up"></i>
+    
+        <alt="좋아요" width="20" height="20">
+        <span class="like-count">461</span>
+    </div>
+        <span class="toggle-reply">펼치기</span>
+        <div class="reply">
+          <p>주차장 옆에 순대국밥 ㄹㅇ 맛집</p>
+          <p>야구보면서 치킨 ㄱㄱㄱ</p>
+<input type="text" class="add-answer" placeholder="답변 추가...">
+<button class="add-answer-btn">답변 추가</button>
+</div>
+<br>
+<div class="comment">
+    <p>*ssg선수 이번에 영입한다는거 사실임?</p><div class="like-btn" onclick="increaseLikes('question1')"></div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+
+    <alt="좋아요" width="20" height="20">
+    <span class="like-count">447</span>
+</div>
+    <span class="toggle-reply">펼치기</span>
+    <div class="reply">
+      <p>오히려 좋을듯?</p>
+      <p>난 반대임</p>
+<input type="text" class="add-answer" placeholder="답변 추가...">
+<button class="add-answer-btn">답변 추가</button>
+</div>
+<br>
+<div class="comment">
+    <p>*LG 10년째 팬인데 우승해서 행복하다!</p><div class="like-btn" onclick="increaseLikes('question1')"></div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+
+    <alt="좋아요" width="20" height="20">
+    <span class="like-count">355</span>
+</div>
+    <span class="toggle-reply">펼치기</span>
+    <div class="reply">
+      <p>한화는 언제쯤ㅠㅠ</p>
+      <p>축하드려요!!</p>
+<input type="text" class="add-answer" placeholder="답변 추가...">
+<button class="add-answer-btn">답변 추가</button>
+</div>
+<br>
+<div class="comment">
+    <p>*오늘 아시아프로야구챔피언십 경기있어요</p><div class="like-btn" onclick="increaseLikes('question1')"></div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+
+    <alt="좋아요" width="20" height="20">
+    <span class="like-count">276</span>
+</div>
+    <span class="toggle-reply">펼치기</span>
+    <div class="reply">
+      <p>헐 몰랐는데, 감사합니다!</p>
+      <p>한일전은 이겨야지~</p>
+<input type="text" class="add-answer" placeholder="답변 추가...">
+<button class="add-answer-btn">답변 추가</button>
+</div>
+
+     
+<script>
+    const addAnswerButtons = document.querySelectorAll('.add-answer-btn');
+
+    addAnswerButtons.forEach(button => {
+        button.addEventListener('click', () => {
+        const replySection = button.parentElement;
+     const answerInput = replySection.querySelector('.add-answer');
+    const answerText = answerInput.value.trim();
+
+    if (answerText !== '') {
+    const newAnswer = document.createElement('p');
+      newAnswer.innerText = ` ${answerText}`;
+
+ replySection.appendChild(newAnswer);
+      answerInput.value = ''; // 입력 필드 초기화
+    }
+  });
+});
+ function submitAnswer(questionId) {
+    const answerText = document.getElementById('answerText').value;
+    const answerContainer = document.getElementById('answer1');
+    const newAnswer = document.createElement('p');
+    newAnswer.textContent = answerText;
+    answerContainer.appendChild(newAnswer);
+        }
+ let likeCount = 0;
+
+  function increaseLikes() {
+    likeCount++;
+    document.getElementById('like-count').innerText = likeCount;
+  }
+function increaseLikes(questionId) {
+    const question = document.getElementById(questionId);
+    const likeCount = question.querySelector('.like-count');
+    let currentLikes = parseInt(likeCount.textContent);
+    currentLikes++;
+    likeCount.textContent = currentLikes;
+        }
+    const toggleButtons = document.querySelectorAll('.toggle-reply');
+
+     toggleButtons.forEach(button => {
+     button.addEventListener('click', () => {
+    const replySection = button.nextElementSibling; // 대댓글 섹션을 가져옴
+    replySection.classList.toggle('show'); // 'show' 클래스를 토글하여 보이거나 숨김
+     button.textContent = replySection.classList.contains('show') ? '숨기기' : '펼치기';
+    });
+  });  
+ 
+    
+  </script>
+  <script> 
+     const question = document.querySelectorAll('.question');
+
+         questions.forEach(question => {
+         const toggleBtn = question.querySelector('.toggle-comments');
+         const addCommentBtn = question.querySelector('.add-comment-btn');
+         const commentsContainer = question.querySelector('.comments');
+
+
+    addCommentBtn.addEventListener('click', () => {
+      const newCommentInput = question.querySelector('.new-comment');
+      const commentText = newCommentInput.value;
+
+      if (commentText.trim() !== '') {
+        const newComment = document.createElement('div');
+        newComment.classList.add('comment');
+        newComment.innerText = commentText;
+
+        commentsContainer.appendChild(newComment);
+
+        // 클라이언트 사이드에서 데이터 관리 시뮬레이션 (실제로는 서버로 데이터를 보냄)
+        saveCommentToServer(commentText); // 서버에 데이터 저장
+
+        newCommentInput.value = '';
+      }
+    });
+    function toggleAnswer(button) {
+    var answer = button.nextElementSibling;
+    answer.classList.toggle('expanded');
+  }
+  });
+
+  function saveCommentToServer(comment) {
+    // 여기서는 간단히 콘솔에 로그를 찍어서 저장된 것처럼 시뮬레이션
+    console.log(`서버에 댓글 저장: ${comment}`);
+  }
+
+        // 질문을 가져와서 표시
+        const questionForAnswer = localStorage.getItem('questionForAnswer');
+        const questionDisplay = document.getElementById('questionDisplay');
+        
+        if (questionForAnswer) {
+            questionDisplay.innerText = '질문: ' + questionForAnswer;
+        } else {
+            questionDisplay.innerText = '질문이 없습니다.';
+        }
+    </script>
+</body>
+</html>
